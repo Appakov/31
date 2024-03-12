@@ -30,7 +30,7 @@
 //     }
 // }
 
-var enterWord = prompt('Введите слово').trim()
+var enterWord = prompt('Введите слово')
 if (isNaN(enterWord) && enterWord !== '') {
 
     function renderReturn(inputString) {
