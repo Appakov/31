@@ -30,9 +30,12 @@ btnZero.addEventListener('click', () => {
 })
 
 const bntRed = document.querySelector('.red-signal')
+const textStop = document.querySelector('.stop')
 const bntYellow = document.querySelector('.yellow-signal')
+const getReady = document.querySelector('.getReady')
 const bntGreen = document.querySelector('.green-signal')
+const go = document.querySelector('.go')
 
-bntRed.addEventListener('click', ()=> alert('Стоп'))
-bntYellow.addEventListener('click', ()=> alert('Готовься'))
-bntGreen.addEventListener('click', ()=> alert('езжай'))
+bntRed.addEventListener('click', () => textStop.innerHTML = 'Стоп')
+bntYellow.addEventListener('click', () => getReady.innerHTML = 'Готовься')
+bntGreen.addEventListener('click', () => go.innerHTML = 'езжай')
